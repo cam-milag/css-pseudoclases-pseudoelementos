@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclases y Pseudoelementos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <!--aca va la barra de navegacion-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="pseudoelementos-pseudoclases-css/index.html">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="pseudoClase/index.html">Pseudo clases</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pseudoelemento/index.html">Pseudo elementos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://github.com/cam-milag?tab=repositories">My Git hub</a>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+      <div class="container">
+        <!--aca va el primer titulo-->
+        <header class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 order-header">
+                <h1>Pseudoclases</h1>
+            </div>
+        </header>
+        <!--aca van las secciones-->
+        <section class="row" >
+          <article class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 content-article color1">
+            <h1 class="tittle">-Uno</h1>
+              <div class="content">
+                <h2 class="subtittle">:active</h2>
+                <p>Selecciona un elemento cuando el usuario lo activa</p>
+                <a class="ejemplo1" href="#">(por ejemplo, con un clic).</a>
+              </div>
+          </article>
+
+          <article class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 content-article color2">
+              <h1 class="tittle">-Dos</h1>
+              <div class="content">
+                  <h2 class="subtittle">:any-link</h2>
+                  <p>Selecciona los estados :link y :visited de un enlace.</p>
+                  <a class="ejemplo2" href="https://developer.mozilla.org/es/docs/Web/CSS/:any-link">Enlace externo</a><br>
+                  <a class="ejemplo2" href="#">Enlace de destino interno</a><br>
+                </div>
+          </article>
+
+          <article class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 content-article color3">
+            <h1 class="tittle">-Tres</h1>
+              <div class="content">
+                <h2 class="subtittle">:blank</h2>
+                <p>Selecciona elementos cuyo valor de entrada esta vació.</p>
+                <p>Escribe el nombre de tu película favorita<input></p>
+              </div>
+          </article>
+
+          <article class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 content-article color4">
+            <h1 class="tittle">-Cuatro</h1>
+              <div class="content">
+                <h2 class="subtittle">:checked</h2>
+                <p>Representa cualquier radio, checkbox, u option en un elemento que está marcado o conmutado a un estado. </p>
+                <div class="ejemplo4">
+                    <input class="input" type="radio" name="my-input" id="yes">
+                    <label for="yes">Yes</label>
+                  
+                    <input class="input" type="radio" name="my-input" id="no">
+                    <label for="no">No</label>
+                  </div>
+                  
+                  <div>
+                    <input type="checkbox" name="my-checkbox" id="opt-in">
+                    <label for="opt-in">Check me!</label>
+                  </div>
+                  
+                  <select name="my-select" id="fruit">
+                    <option value="opt1">One</option>
+                    <option value="opt2">Two</option>
+                    <option value="opt3">Three</option>
+                  </select> 
+              </div>
+          </article>
+
+          <article class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 content-article color4">
+            <h1 class="tittle">-Cinco</h1>
+              <div class="content">
+                <h2 class="subtittle">:current</h2>
+                <p>Representa un elemento o el ancestro de un elemento que se muestra actualmente.</p>
+                <video class="ejemplo5" controls preload="metadata" width="300px" height="150px">
+                    <source src="video/To_your_eternity_but_it_s_lofi_hiphop_Pink_Blood__ns40oOCmkq0_134.mp4" 
+                    type="video/mp4"/>
+                    <source src="video/To_your_eternity_but_it_s_lofi_hiphop_Pink_Blood__ns40oOCmkq0_134.mp4" type="video/webm" />
+                    <track
+                      label="English"
+                      kind="subtitles"
+                      srclang="en"
+                      src="subtitles.vtt"
+                      default />
+                </video>
+              </div>
+          </article>
+
+          <article class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 content-article color3">
+            <h1 class="tittle">-Seis</h1>
+              <div class="content">
+                <h2 class="subtittle">:default</h2>
+                <p>Representa cualquier elemento de formulario que sea el predeterminado entre un grupo de elementos relacionados.</p>
+                <input class="ejemplo6"  type="radio" name="season" id="spring">
+                <label for="spring">Canela</label>
+                
+                <input class="ejemplo6"  type="radio" name="season" id="summer" checked>
+                <label for="summer">Huevos</label>
+                
+                <input class="ejemplo6"  type="radio" name="season" id="fall" checked>
+                <label for="fall">Leche</label>
+                
+                <input class="ejemplo6" type="radio" name="season" id="winter">
+                <label for="winter">Harina</label> 
+              </div>
+          </article>
+
+          <article class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 content-article color2">
+            <h1 class="tittle">-Siete</h1>
+              <div class="content">
+                <h2 class="subtittle">:dir</h2>
+                <p>Coincide con los elementos en función de la direccionalidad del texto contenido en ellos.</p>
+              </div>
+              <div class="ejemplo7" dir="rtl">
+                <span>La vaca lola, la vaca lola</span>
+                <div  class="ltr" dir="ltr">tiene cabeza y tiene cola
+                <div class="rtl" dir="rtl">y hace muu</div>
+              </div>
+          </article>
+          
+          <article class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 content-article color1">
+            <h1 class="tittle">-Ocho</h1>
+              <div class="content">
+                <h2 class="subtittle">:disabled</h2>
+                <p>Representa a cualquier elemento deshabilitado.</p>
+                <form action="#">
+                  <fieldset class="ejemplo8" id="shipping">
+                    <legend>Dirección de Envío</legend>
+                    <input type="text" placeholder="Nombre" disabled>
+                    <input type="text" placeholder="Dirección">
+                    <input type="text" placeholder="Código postal">
+                  </fieldset>
+                </form>
+              </div>
+          </article>
+          <article class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 content-article color1">
+            <h1 class="tittle">-Nueve</h1>
+              <div class="content">
+                <h2 class="subtittle">:empty</h2>
+                <p>Representa cualquier elemento que no tenga hijos.</p>
+              </div>
+              <div class="ejemplo9">
+                <div class="box"><!-- Voy a ser de color naranja. --></div>
+                <div class="box">Soy color verde.</div>
+              </div>
+          </article>
+          <article class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 content-article color2">
+            <h1 class="tittle">-Diez</h1>
+              <div class="content">
+                <h2 class="subtittle">:enabled</h2>
+                <p>Representa cualquier elemento habilitado.</p>
+                <form action="url_of_form">
+                  <label for="FirstField">Estoy (habilitado):</label>
+                  <input type="text" id="FirstField" value="¿Comó estas?"><br>
+                
+                  <label for="SecondField">Me encuentro (deshabilitado):</label>
+                  <input type="text" id="SecondField" value="¿Estas bien?" disabled="disabled"><br>
+                  <input type="button" value="Enviar">
+                </form>
+              </div>
+          </article>
+          <article class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 content-article color3">
+            <h1 class="tittle">-Once</h1>
+              <div class="content">
+                <h2 class="subtittle">:first</h2>
+                <p class="ejemplo11">Representa la primera página de un documento impreso.</p>
+                <p class="ejemplo11">Imprimeme.</p>
+                <p class="ejemplo11">No puedoo ser impresa.</p>
+                <button>Imprimir!</button>
+              </div>
+          </article>
+          <article class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 content-article color4">
+            <h1 class="tittle">-Doce</h1>
+              <div class="content">
+                <h2 class="subtittle">:first-child</h2>
+                <p>Representa el primer elemento entre un grupo de elementos hermanos.</p>
+                <div>
+                  <p class="ejemplo12">¡Este texto está seleccionado!</p>
+                  <p class="ejemplo12">Este texto no está seleccionado.</p>
+                </div>
+              </div>
+          </article>
+          <article class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 content-article color4">
+            <h1 class="tittle">-Trece</h1>
+              <div class="content">
+                <h2 class="subtittle">:first-of-type</h2>
+                <p>Selecciona el primero entre un tipo determinado de elementos hermanos.</p>
+                <div>
+                  <p class="ejemplo13">Este texto esta de otro color, porque soy el primero</p>
+                  <p class="ejemplo13">Párrafo 2</p>
+                </div>
+              </div>
+          </article>
+          <article class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 content-article color3">
+            <h1 class="tittle">-Catorce</h1>
+              <div class="content">
+                <h2 class="subtittle">:focus</h2>
+                <p>	Selecciona el elemento que tiene el foco.</p>
+                <input class="red-input" value="Tocame seré rojo."><br>
+                <input class="blue-input" value="Tocame seré azul.">
+              </div>
+          </article>
+          <article class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 content-article color2">
+            <h1 class="tittle">-Quince</h1>
+              <div class="content">
+                <h2 class="subtittle">:focus-visible</h2>
+                <p>Selecciona el elemento que tiene el foco cuando el foco tiene que estar visible para el usuario.</p>
+                <input class="focus-only ejemplo15" value=":focus only"><br>
+                <button class="focus-only ejemplo15">:focus only</button><br>
+                <input class="focus-visible-only ejemplo15" value=":focus-visible only"><br>
+                <button class="focus-visible-only ejemplo15">:focus-visible only</button>
+              </div>
+          </article>
+          <article class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 content-article color1">
+            <h1 class="tittle">-Dieciseis</h1>
+              <div class="content">
+                <h2 class="subtittle">:focus-within</h2>
+                <p>Selecciona el elemento que tiene el foco y el elemento con un descendiente que tiene el foco.</p>
+                <p>Intenta escribir en este formulario.</p>
+                <form class="ejemplo16>
+                  <label for="given_name">Nombre:</label>
+                  <input id="given_name" type="text">
+                  <br>
+                  <label for="family_name">Apellido:</label>
+                  <input class="ejemplo16 id="family_name" type="text">
+                </form> 
+              </div>
+          </article>
+          <article class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 content-article color1">
+            <h1 class="tittle">-Diecisiete</h1>
+              <div class="content">
+                <h2 class="subtittle">:future</h2>
+                <p>Selecciona los elementos que van después del elemento en curso.</p>
+                <video controls preload="metadata"  class="ejemplo17" height="200px" width="300px">
+                  <source src="video/videoplayback.mp4" type="video/mp4" />
+                  <source src="video.webm" type="video/webm" />
+                  <track
+                    label="English"
+                    kind="subtitles"
+                    srclang="en"
+                    src="subtitles.vtt"
+                    default />
+                </video>
+              </div>
+          </article>
+          <article class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 content-article color2">
+            <h1 class="tittle">-Doieciocho</h1>
+              <div class="content">
+                <h2 class="subtittle">:hover</h2>
+                <p>Selecciona un elemento cuando el usuario interactúa con él.</p>
+                <a class="ejemplo18" href="#">Intenta pasar el mouse sobre este enlace y cambiara de color.</a>
+              </div>
+          </article>
+          <article class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 content-article color3">
+            <h1 class="tittle">-Diecinueve</h1>
+              <div class="content">
+                <h2 class="subtittle">:indeterminate</h2>
+                <p>Representa cualquier elemento de formulario cuyo estado sea indeterminado.</p>
+                <div>
+                  <input class="ejemplo19" type="radio" id="radio">
+                  <label class="ejemplo19" for="radio">Esta etiqueta comienza con el color azul y luego se va.</label>
+                </div>
+              </div>
+          </article>
+          <article class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 content-article color4">
+            <h1 class="tittle">-Veinte</h1>
+              <div class="content">
+                <h2 class="subtittle">:in-range</h2>
+                <p>Representa un elemento < input > cuyo valor actual se encuentra dentro de los límites de rango especificados por los atributos min y max.</p>
+                <form action="" id="form1">
+                  <ul>Los valores entre 1min y 10max son válidos.
+                    <li class="ejemplo20">
+                      <input class="ejemplo20" id="value1" name="value1" type="number" placeholder="1 a 10" min="1" max="10" value="12">
+                      <label for="value1">Tu valor esta </label>
+                    </li>
+                  </ul>
+                </form> 
+              </div>
+          </article>
+          <article class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 content-article color4">
+            <h1 class="tittle">-Veintiuno</h1>
+              <div class="content">
+                <h2 class="subtittle">:invalid</h2>
+                <p>Selecciona un elemento, como por ejemplo una etiqueta < input >, cuyo estado es no válido.</p>
+                <form class="ejemplo21">
+                  <label for="url_input">Ingresa una URL:</label>
+                  <input class="ejemplo20" type="url" id="url_input" />
+                  <br />
+                  <br />
+                  <label for="email_input">Introduzca una dirección de correo electrónico:</label>
+                  <input type="email" id="email_input" required/>
+                </form>
+              </div>
+          </article>
+          <article class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 content-article color3">
+            <h1 class="tittle">-Veintidos</h1>
+              <div class="content">
+                <h2 class="subtittle">:lang</h2>
+                <p>Es utilizada para modificar elementos en función del idioma en el que se determina que están.</p>
+                <div class="ejemplo22" lang="en"><q>Esta cita en inglés tiene una cita <q>anidada</q> adentro.</q></div>
+                <div class="ejemplo22" lang="fr"><q>Esta cita en francés tiene una cita <q>anidada</q> adentro.</q></div>
+                <div class="ejemplo22" lang="de"><q>Esta cita en aleman tiene una cita <q>anidada</q> adentro.</q></div>
+              </div>
+          </article>
+          <article class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 content-article color2">
+            <h1 class="tittle">-Veintitres</h1>
+              <div class="content">
+                <h2 class="subtittle">:last-child</h2>
+                <p>Representa el último elemento entre un grupo de elementos hermanos.</p>
+                <div>
+                  <p class="ejemplo23">Este texto no está seleccionado.</p>
+                  <p class="ejemplo23">¡Este texto está seleccionado!</p>
+                </div>
+              </div>
+          </article>
+          <article class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 content-article color1">
+            <h1 class="tittle">-Veinticuatro</h1>
+              <div class="content">
+                <h2 class="subtittle">:last-of-type</h2>
+                <p>Selecciona el último de entre los elementos hermanos de un tipo determinado.</p>
+                <p class="ejemplo24">Soy el párrafo 1</p>
+                <p class="ejemplo24">Soy el párrafo 2</p>  
+              </div>
+          </article>
+          <article class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 content-article color1">
+            <h1 class="tittle">-Veinticinco</h1>
+              <div class="content">
+                <h2 class="subtittle">:left</h2>
+                <p>Representa todas las páginas de la izquierda de un documento impreso, utilizada con la regla @page at.</p>
+              </div>
+          </article>
+          <article class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 content-article color2">
+            <h1 class="tittle">-Veintiseis</h1>
+              <div class="content">
+                <h2 class="subtittle">:link</h2>
+                <p>Selecciona los enlaces no visitados.</p>
+                <a class="ejemplo26" href="#ordinary-target">Este es un enlace ordinario.</a><br>
+                <a class="ejemplo26" href="">Ya has visitado este enlace.</a><br>
+              </div>
+          </article>
+          <article class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 content-article color3">
+            <h1 class="tittle">-Veintisiete</h1>
+              <div class="content">
+                <h2 class="subtittle">:local-link</h2>
+                <p>Selecciona los enlaces que dirigen a páginas que se encuentran en la misma página web que el documento activo.</p>
+                <a class="ejemplo27" href="#target">This is a link on the current page.</a><br />
+                <a class="ejemplo27" href="https://developer.mozilla.org/en-US/docs/Web/CSS/:local-link">This is an external link</a><br />
+              </div>
+          </article>
+          <article class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 content-article color4">
+            <h1 class="tittle">-Veintiocho</h1>
+              <div class="content">
+                <h2 class="subtittle">:is()</h2>
+                <p>Permite construir rápidamente conjuntos de selectores similares estableciendo grupos desde los que cualquier elemento incluido coincidirá.</p>
+              </div>
+          </article>
+          <article class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 content-article color4">
+            <h1 class="tittle">-Veintinueve</h1>
+              <div class="content">
+                <h2 class="subtittle">:not</h2>
+                <p>Selecciona elementos que otros selectores no han seleccionado antes y que se han pasado como valor de este selector.</p>
+                <p class="ejemplo29">Soy un párrafo.</p>
+                <p class="fancy">¡Soy muy elegante!</p>
+                <div class="ejemplo29">NO soy un párrafo.</div>
+              </div>
+          </article>
+          <article class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 content-article color3">
+            <h1 class="tittle">-Treinta</h1>
+              <div class="content">
+                <h2 class="subtittle">:nth-child</h2>
+                <p>Se especifica con un único argumento, que representa el patrón para los elementos coincidentes.</p>
+                 <p>Los hijos 1, 3, 5 y 7 son seleccionados.</p>
+                 <div class="first">
+                   <span class="ejemplo30">Span 1!</span>
+                   <span class="ejemplo30">Span 2</span>
+                   <span class="ejemplo30">Span 3!</span>
+                   <span class="ejemplo30">Span 4</span>
+                   <span class="ejemplo30">Span 5!</span>
+                   <span class="ejemplo30">Span 6</span>
+                   <span class="ejemplo30">Span 7!</span>
+                 </div>
+                </div>
+          </article>
+          <article class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 content-article color2">
+            <h1 class="tittle">-Treinta y uno</h1>
+              <div class="content">
+                <h2 class="subtittle">:nth-of-type</h2>
+                <p>Selecciona uno o más elementos de un tipo dado, en función de su posición entre un grupo de hermanos.</p>
+                <div>
+                  <p class="ejemplo31">1er párrafo.</p>
+                  <p class="ejemplo31">2do párrafo.</p>
+                  <p class="ejemplo31">3er párrafo.</p>
+                  <p class="ejemplo31">4to párrafo.</p>
+                </div>
+              </div>  
+          </article>
+          <article class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 content-article color1">
+            <h1 class="tittle">-Treinta y dos</h1>
+              <div class="content">
+                <h2 class="subtittle">:nth-last-child</h2>
+                <p>Selecciona uno o más elementos en función de su posición entre un grupo de hermanos, contando desde el final.</p>
+                <table>
+                  <tbody>
+                    <tr class="ejemplo32">
+                      <td>Primera línea</td>
+                    </tr>
+                    <tr class="ejemplo32">
+                      <td>Segunda línea</td>
+                    </tr>
+                    <tr class="ejemplo32">
+                      <td>Tercera línea</td>
+                    </tr>
+                    <tr class="ejemplo32">
+                      <td>Cuarta línea</td>
+                    </tr>
+                    <tr class="ejemplo32">
+                      <td>Quinta línea</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+          </article>
+          <article class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 content-article color1">
+            <h1 class="tittle">-Treinta y tres</h1>
+              <div class="content">
+                <h2 class="subtittle">:nth-last-of-type</h2>
+                <p>Coincide con uno o más elementos de un tipo dado, en función de su posición entre un grupo de hermanos, contando desde el final.</p>
+                <div>
+                  <span class="ejemplo33">¡Guauu, este span se pone color lima!</span>
+                  <em>Esto esta enfatizado.</em>
+                  <span class="ejemplo33"> Este es un spam</span>
+                  <strike>Esto está tachado.</strike>
+                </div>
+              </div>
+          </article>
+          <article class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 content-article color2">
+            <h1 class="tittle">-Treinta y cuatro</h1>
+              <div class="content">
+                <h2 class="subtittle">:only-child</h2>
+                <p>Representa un elemento sin hermanos.</p>
+                <main class="ejemplo34">
+                  <div>
+                    <i>Soy un hijo único y solitario.</i>
+                  </div>
+                  <div>
+                    <i>Yo tengo hermanos.</i><br>
+                    <b>¡Yo también!</b><br>
+                    <span>Yo también tengo hermanos, <span>pero este es un hijo único.</span></span>
+                  </div>
+                </main>
+              </div>
+          </article>
+          <article class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 content-article color3">
+            <h1 class="tittle">-Treinta y cinco</h1>
+              <div class="content">
+                <h2 class="subtittle">:only-of-type</h2>
+                <p>Selecciona un elemento que es el único de su tipo entre sus elementos hermanos.</p>
+                <main class="ejemplo35">
+                  <div>Soy `div` #1</div>
+                  <p>Yo soy el único `p` entre mis hermanos.</p>
+                  <div>Soy `div` #2</div>
+                </main>
+              </div>
+          </article>
+          <article class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 content-article color4">
+            <h1 class="tittle">-Treinta y seis</h1>
+              <div class="content">
+                <h2 class="subtittle">:optional</h2>
+                <p>Selecciona los elementos de formulario que son innecesarios.</p>
+                <div>
+                  <p>Estea etiqueta `input` sera opcional<input class="ejemplo36"></p>
+                </div>
+              </div>
+          </article>
+          <article class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 content-article color4">
+            <h1 class="tittle">-Treinta y siete</h1>
+              <div class="content">
+                <h2 class="subtittle">:out-of-range</h2>
+                <p>Selecciona un elemento cuyo valor está fuera de rango.</p>
+                <form action="" id="form1">
+                  <ul>Los valores entre 1 y 10 son válidos.
+                    <li class="ejemplo37">
+                      <input class="ejemplo37" id="value1" name="value1" type="number" placeholder="1 a 10" min="1" max="10" value="12">
+                      <label for="value1">Tu valor esta </label>
+                    </li>
+                  </ul>
+                </form>
+              </div>
+          </article>
+          <article class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 content-article color3">
+            <h1 class="tittle">-Treinta y ocho</h1>
+              <div class="content">
+                <h2 class="subtittle">:past</h2>
+                <p>Selecciona los elementos que se encuentran antes del elemento activo.</p>
+                <video class="ejemplo38" controls preload="metadata" height="200px" width="300px">
+                  <source src="video/pikito.mp4" type="video/mp4"  />
+                  <source src="video.webm" type="video/webm" />
+                  <track
+                    label="English"
+                    kind="subtitles"
+                    srclang="en"
+                    src="subtitles.vtt"
+                    default />
+                </video>
+              </div>
+          </article>
+          <article class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 content-article color2">
+            <h1 class="tittle">-Treinta y nueve</h1>
+              <div class="content">
+                <h2 class="subtittle">:placeholder-shown</h2>
+                <p>Selecciona el elemento de entrada que muestra texto de marcador de posición.</p>
+                <input class="ejemplo39" placeholder="¡Escribe algo aquí!">
+              </div>
+          </article>
+          <article class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 content-article color1">
+            <h1 class="tittle">-Cuarenta</h1>
+              <div class="content">
+                <h2 class="subtittle">:playing</h2>
+                <p>Selecciona un elemento que representa un audio, un vídeo o un recurso similar que se puede «reproducir» o «pausar», cuando el elemento está «en reproducción».</p>
+                <video class="ejemplo40" controls preload="metadata" height="200px" width="300px">
+                  <source src="video/idontwanna.mp4" type="video/mp4"  />
+                </video>
+              </div>
+          </article>
+          <article class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 content-article color1">
+            <h1 class="tittle">-Cuarenta y uno</h1>
+              <div class="content">
+                <h2 class="subtittle">:paused</h2>
+                <p>Selecciona un elemento que representa un audio, un vídeo o un recurso similar que se puede “«reproducir» o «pausar» cuando el elemento está «pausado».</p>
+                <video class="ejemplo41" controls preload="metadata" height="200px" width="300px">
+                  <source src="video/idontwanna.mp4" type="video/mp4"  />
+                </video>
+              </div>
+          </article>
+          <article class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 content-article color2">
+            <h1 class="tittle">-Cuarenta y dos</h1>
+              <div class="content">
+                <h2 class="subtittle">:read-only</h2>
+                <p>Selecciona los elementos que el usuario no puede modificar.</p>
+                <input class="ejemplo42" type="text" value="Campo de solo lectura." readonly>
+                <p class="ejemplo42" contenteditable="true">Puedes editar este párrafo, ¡inténtalo!</p>
+              </div>
+          </article>
+          <article class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 content-article color3">
+            <h1 class="tittle">-Cuarenta y tres</h1>
+              <div class="content">
+                <h2 class="subtittle">:read-write</h2>
+                <p>Selecciona los elementos que el usuario puede modificar.</p>
+                <input class="ejemplo43" type="text" value="Podés editarme">
+              </div>
+          </article>
+          <article class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 content-article color4">
+            <h1 class="tittle">-Cuarenta y cuatro</h1>
+              <div class="content">
+                <h2 class="subtittle">:required</h2>
+                <p>Selecciona los elementos de formulario que son necesarios.</p>
+                <form>
+                  <label for="email_input">Introduzca una dirección de correo electrónico:</label>
+                  <input class="ejemplo44" type="email" id="email_input" required/>
+                </form>
+              </div>
+          </article>
+          <article class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 content-article color4">
+            <h1 class="tittle">-Cuarenta y cinco</h1>
+              <div class="content">
+                <h2 class="subtittle">:right</h2>
+                <p>Representa todas las páginas de la derecha de un documento impreso, utilizada con la regla @page at.</p>
+              </div>
+          </article>
+          <article class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 content-article color3">
+            <h1 class="tittle">-Cuarenta y seis</h1>
+              <div class="content">
+                <h2 class="subtittle">:root</h2>
+                <p>Selecciona el elemento raíz de un árbol que representa el documento. En HTML, :root representa el elemento < html > y es idéntico al selector html, excepto que su especificidad es mayor.</p>
+              </div>
+          </article>
+          <article class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 content-article color2">
+            <h1 class="tittle">-Cuarenta y siete</h1>
+              <div class="content">
+                <h2 class="subtittle">:scope</h2>
+                <p>Selecciona cualquier elemento de ámbito.</p>
+                <p id="para" class="ejemplo47">
+                  Este no lo entendi, es necesario JavaScript y aún no se JavaScript
+                </p>
+                <p id="output"></p>
+              </div>
+          </article>
+          <article class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 content-article color1">
+            <h1 class="tittle">-Cuarenta y ocho</h1>
+              <div class="content">
+                <h2 class="subtittle">:valid</h2>
+                <p>	Selecciona un elemento como < input >, en un estado válido.</p>
+                <form class="ejemplo48">
+                  <label for="url_input">Ingresa una URL:</label>
+                  <input type="url" id="url_input" />
+                </form>
+              </div>
+          </article>
+          <article class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 content-article color1">
+            <h1 class="tittle">-Cuarenta y nueve</h1>
+              <div class="content">
+                <h2 class="subtittle">:target</h2>
+                <p>Representa un elemento único (el elemento objetivo) con un id que coincide con el fragmento de la URL.</p>
+                <h4>Tabla de contenido</h4>
+                <ol>
+                 <li><a href="#p1">¡Salta al primer párrafo!</a></li>
+                 <li><a href="#p2">¡Salta al segundo párrafo!</a></li>
+                 <li><a href="#nowhere">Este enlace no va a ninguna parte,
+                   porque el objetivo no existe.</a></li>
+                </ol>
+                
+                <h4>Mi artículo divertido</h4>
+                <p class="ejemplo49" id="p1">Puede orientar elegir como blanco <i>este párrafo</i> utilizando un
+                  fragmento de URL. ¡Haz clic en el enlace de arriba para probar!</p>
+                <p class="ejemplo49" id="p2">Este es <i>otro párrafo</i>, también accesible
+                  desde los enlaces de arriba. ¿No es encantador?</p>
+              </div>
+          </article>
+          <article class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 content-article color2">
+            <h1 class="tittle">-Cincuenta</h1>
+              <div class="content">
+                <h2 class="subtittle">:visited</h2>
+                <p>	Selecciona los enlaces visitados.</p>
+                <a class="ejemplo50" href="#test-visited-link">¿Ya me tocaste?</a><br>
+                <a class="ejemplo50" href="">Ya has visitado este enlace.</a>
+              </div>
+          </article>
+
+        </section>
+      </div>
+
+
+
+
+
+<script src="js/bootstrap.bundle.min.js"></script>
+
+
+
+
+</body>
+</html>

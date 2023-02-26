@@ -1,0 +1,497 @@
+* { 
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: hola;
+    src: url(../fonts/HappyMonkey-Regular.ttf);
+}
+.nav-link {
+    color: rgb(71, 71, 246);
+}
+
+.navbar {
+    font-size: 20px;
+}
+
+.order-header {
+    background-color: rgb(223, 206, 223);
+    color: #413e3e;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.content-article {
+    display: flexbox;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+} 
+
+.color1 {
+    background-color: rgb(206, 204, 228);
+}
+
+.color2 {
+    background-color: rgb(234, 226, 171);
+}
+.color3 {
+    background-color: rgb(176, 216, 210); 
+}
+
+.color4 {
+    background-color: rgb(187, 221, 178);
+}
+
+.tittle {
+    font-family: hola;
+    color:#413e3e;
+    font-style: bold;
+}
+
+.content {
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+}
+
+.subtittle {
+    color: rgb(81, 84, 240);
+    text-shadow: 2px 3px rgb(230, 211, 211);
+    font-style: italic;
+}
+
+.ejemplo1 {
+    font-size: 20px;
+}
+
+.ejemplo1:link { color: blue; }          /* Enlaces no visitados */
+.ejemplo1:visited { color: rgb(38, 61, 54); }     /* Enlaces visitados */
+.ejemplo1:hover { background: rgb(228, 201, 95); }  /* El usuario esta sobre el enlace */
+.ejemplo1:active { color: rgb(189, 61, 201); }        /* Enlaces activos */
+
+.ejemplo2:any-link {
+    border: 1px solid rgb(210, 52, 52);
+    color: rgb(31, 12, 95);
+}
+
+.ejemplo2:-webkit-any-link {
+    border: 1px solid rgb(210, 52, 52);
+    color: rgb(31, 12, 95);
+}
+
+.ejemplo4, select {
+    margin: 8px;
+}
+
+.input:checked + label {
+  color: red;
+}
+
+.input[type="radio"]:checked {
+  box-shadow: 0 0 0 3px orange;
+}
+
+.input[type="checkbox"]:checked {
+  box-shadow: 0 0 0 3px hotpink;
+}
+
+option:checked {
+  color: rgb(105, 70, 223);
+}
+
+.ejemplo5:current(p, span) {
+    background-color: yellow;
+}
+
+.ejemplo6:default {
+    box-shadow: 0 0 2px 1px rgb(176, 54, 206);
+ }
+
+  
+.ejemplo6:default + label {
+    color: rgb(223, 60, 60);
+}
+
+.ltr {
+    color: rgb(70, 72, 184);
+}
+  
+.rtl {
+    Color: rgb(4, 119, 134);
+}
+
+input[type="text"]:disabled {
+    color: #bd2b2b;
+}
+
+.ejemplo7 {
+    margin: 20px;
+}
+
+.box {
+    background: rgb(74, 211, 131);
+    height: 80px;
+    width: 80px;
+}
+  
+.box:empty {
+    background: rgb(218, 163, 15);
+}
+
+.ejemplo8 {
+    margin: 10px;
+}
+input:enabled {
+    color: #2b2;
+}
+  
+input:disabled {
+    color: #aaa;
+}
+
+@page :first {
+    margin-left: 50%;
+    margin-top: 50%;
+}
+  
+.ejemplo11 {
+    page-break-after: always;
+}
+
+.ejemplo12:first-child {
+    color: rgb(47, 49, 189);
+    background-color: rgb(194, 166, 230);
+    padding: 5px;
+}
+
+
+.ejemplo13:first-of-type {
+    color: rgb(26, 40, 197);
+    font-style: bold;
+}
+
+.red-input:focus {
+    background: rgb(230, 177, 124);
+    color: red;
+}
+  
+.blue-input:focus {
+    background: rgb(230, 177, 124);
+    color: blue;
+}
+
+.ejemplo15 {
+    margin: 10px;
+}
+.focus-only:focus {
+    outline: 2px solid black;
+}
+  
+.focus-visible-only:focus-visible {
+    outline: 4px dashed darkorange;
+}
+
+.ejemplo16 {
+    border: 1px solid;
+    color: gray;
+    padding: 4px;
+}
+  
+.ejemplo16:focus-within {
+    background: #ff8;
+    color: black;
+}
+  
+.ejemplo16 {
+    margin: 4px;
+}
+  
+.ejemplo17:future(p, span) {
+    display: none;
+}
+
+.ejemplo18 {
+    background-color: rgb(163, 194, 231);
+    transition: background-color .5s;
+}
+  
+.ejemplo18:hover {
+    background-color: gold;
+}
+
+.ejemplo19:indeterminate + label {
+    background: rgb(57, 176, 222);
+}
+
+.ejemplo21 {
+    list-style: none;
+    margin-bottom: 1em;
+}
+  
+.ejemplo20 {
+    border: 1px solid black;
+    width: 200px;
+}
+  
+.ejemplo20:in-range {
+    background-color: rgba(0, 255, 0, 0.25);
+}
+  
+.ejemplo20:out-of-range {
+    background-color: rgba(255, 0, 0, 0.25);
+    border: 2px solid red;
+}
+  
+.ejemplo20:in-range + label::after {
+    content: 'bien.';
+}
+  
+.ejemplo20:out-of-range + label::after {
+    content: 'fuera de rango!';
+}
+
+
+.ejemplo21:invalid {
+    background-color: #f3bebe;
+}
+.ejemplo21:invalid {
+    border: 5px solid #e3a3a3;
+}
+
+.ejemplo21  :valid {
+    background-color: #ddffdd;
+}
+.ejemplo21:valid {
+    border: 5px solid #ddffdd;
+}
+
+.ejemplo21  :required {
+    border-color: #800000;
+    border-width: 3px;
+}
+
+.ejemplo21  :required:invalid {
+    border-color: #C00000;
+}
+  
+.ejemplo22:lang(en) > q { quotes: '\201C' '\201D' '\2018' '\2019'; }
+.ejemplo22:lang(fr) > q { quotes: '« ' ' »'; }
+.ejemplo22:lang(de) > q { quotes: '»' '«' '\2039' '\203A'; }
+
+.ejemplo23:last-child {
+    color: rgb(158, 236, 158);
+    background-color: rgb(170, 91, 222);
+    padding: 5px;
+}
+
+.ejemplo24:last-of-type {
+    color: rgb(206, 101, 72);
+    font-style: italic;
+}
+
+@page :left {
+    margin: 2in 3in;
+}
+
+.ejemplo26:link {
+    background: gold;
+    color: rgb(198, 102, 23);
+}
+
+.ejemplo17:local-link {
+    color: green;
+}
+
+.fancy {
+    text-shadow: 2px 2px 3px gold;
+  }
+  
+  /* elementos <p> que no están en la clase `.fancy` */
+.ejemplo29:not(.fancy) {
+    color: green;
+  }
+  
+  /* Elementos que no son elementos <p> */
+.ejemplo29:not(p) {
+    text-decoration: underline;
+  }
+  
+  /* Elementos que no son elementos <div> o <span> */
+.ejemplo29:not(div):not(span) {
+    font-weight: bold;
+  }
+  
+  /* Elementos que no son `.crazy` o `.fancy` */
+  /* Tenga en cuenta que esta sintaxis aún no está bien soportada. */
+.ejemplo29:not(.crazy, .fancy) {
+    font-family: sans-serif;
+  }
+
+
+.ejemplo30, em {
+    padding: 5px;
+    border: 1px solid green;
+    display: inline-block;
+    margin-bottom: 3px;
+}
+
+.ejemplo30:nth-child(2n+1) {
+    background-color: rgb(114, 126, 215);
+}
+
+/* Párrafos impares */
+.ejemplo31:nth-of-type(2n+1) {
+    color: red;
+}
+  
+  /* Párrafos pares */
+.ejemplo31:nth-of-type(2n) {
+    color: blue;
+}
+  
+  /* Primer párrafo */
+.ejemplo31:nth-of-type(1) {
+    font-weight: bold;
+}
+
+
+table {
+    border: 1px solid blue;
+}
+  
+  /* Selecciona los últimos tres elementos */
+.ejemplo32:nth-last-child(-n+3) {
+    background-color: rgb(221, 133, 231);
+}
+  
+  /* Toma todos los elementos a partir del penúltimo elemento */
+.ejemplo32:nth-last-child(n+2) {
+    color: blue;
+}
+  
+  /* Seleccione solo el penúltimo elemento */
+.ejemplo32:nth-last-child(2) {
+    font-weight: 600;
+}
+
+
+.ejemplo33:nth-last-of-type(2) {
+    background-color: rgb(89, 243, 89);
+}
+
+.ejemplo34 :only-child {
+    color: rgb(202, 37, 175);
+}
+
+.ejemplo35 :only-of-type {
+    color: rgb(234, 205, 42);
+    background-color: rgb(42, 89, 42);
+}
+.ejemplo36:optional {
+    border: 1px dashed black;
+}
+
+.ejemplo37 {
+    list-style: none;
+    margin-bottom: 1em;
+}
+  
+.ejemplo37 {
+    border: 1px solid black;
+}
+  
+.ejemplo37:in-range {
+    background-color: rgba(0, 255, 0, 0.25);
+}
+  
+.ejemplo37:out-of-range {
+    background-color: rgba(255, 0, 0, 0.25);
+    border: 2px solid red;
+}
+  
+.ejemplo37:in-range + label::after {
+    content: 'bien.';
+}
+  
+.ejemplo37:out-of-range + label::after {
+    content: '¡fuera de rango!';
+}
+
+.ejemplo38:past(p, span) {
+    display: none;
+}
+
+.ejemplo39 {
+    border: 2px solid rgb(60, 157, 226);
+    padding: 3px;
+}
+
+.ejemplo39:placeholder-shown {
+    border-color: rgb(38, 10, 201);
+}
+
+.ejemplo40:playing {
+    border: 5px solid orange;
+}
+
+.ejemplo41:paused {
+    border: 5px solid orange;
+}
+
+
+.ejemplo42:-moz-read-only { background: rgb(93, 253, 253); }
+.ejemplo42:read-only { background: rgb(85, 228, 228); }
+
+.ejemplo42:read-only { background: lightgray; }
+.ejemplo42[contenteditable="true"] { color: rgb(224, 56, 230); }
+
+.ejemplo43:-moz-read-write { background: rgb(4, 58, 58); }
+.ejemplo43:read-write { background: rgb(171, 221, 221); }
+
+
+.ejemplo44:required:invalid {
+    border-color: #C00000;
+}
+
+.ejemplo47 {
+    color: #d86b6b;
+}
+
+.ejemplo48:valid {
+    border: 5px solid #99ed99;
+}
+
+
+.ejemplo49:target {
+    background-color: rgb(223, 198, 54);
+  }
+  
+  /* Agrega un pseudo-elemento dentro del elemento de destino */
+.ejemplo49:target::before {
+    font: 70% sans-serif;
+    content: "►";
+    color: limegreen;
+    margin-right: .25em;
+  }
+  
+  /* Estilo de elementos en cursiva dentro del elemento de destino */
+.ejemplo49:target i {
+    color: red;
+  }
+
+
+.ejemplo50 {
+    /* Especifique los valores predeterminados no transparentes a ciertas propiedades,
+       lo que les permite ser diseñado con el estado :visited */
+    background-color: rgb(230, 139, 139);
+    border: 1px solid white;
+}

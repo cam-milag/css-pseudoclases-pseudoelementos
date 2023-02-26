@@ -1,0 +1,68 @@
+* { 
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+
+}
+@font-face {
+    font-family: hola;
+    src: url(../fonts/HappyMonkey-Regular.ttf);
+}
+.nav-link {
+    color: rgb(71, 71, 246);
+}
+
+.navbar {
+    font-size: 20px;
+    transition: all 0.05s ease;
+}
+
+.fondo {
+    background-color: rgb(232, 160, 92);
+}
+.tittlep{
+    height: 10vh;
+    font-family: hola;
+    color: antiquewhite;
+    background-color: transparent;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-shadow: 2px 4px 3px black;
+    margin-top: 50px;
+    border: 2px black;
+}
+
+.tittle {
+    font-family: hola;
+    height: 20vh;
+    background-color:  navajowhite;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(52, 51, 50);
+    margin-top: 20px;
+}
+
+.content {
+    background-color: rgb(171, 171, 226);
+    display: flexbox;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+    height: 20vh;
+    color: rgb(41, 41, 40);
+    font-size: 25px;
+
+} 
+
+
+
+
+
+

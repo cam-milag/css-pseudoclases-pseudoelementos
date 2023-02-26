@@ -1,0 +1,134 @@
+* { 
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: hola;
+    src: url(../fonts/HappyMonkey-Regular.ttf);
+}
+.nav-link {
+    color: rgb(71, 71, 246);
+}
+
+.navbar {
+    font-size: 20px;
+}
+
+.order-header {
+    background-color: rgb(223, 206, 223);
+    color: #413e3e;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.content-article {
+    display: flexbox;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+} 
+
+.color1 {
+    background-color: rgb(234, 226, 171);
+}
+.color2 {
+    background-color: rgb(206, 204, 228);
+}
+
+.color3 {
+    background-color: rgb(187, 221, 178);
+}
+
+.color4 {
+    background-color: rgb(176, 216, 210); 
+}
+
+
+
+.tittle {
+    font-family: hola;
+    color:#413e3e;
+    font-style: bold;
+}
+
+.content {
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+}
+
+.subtittle {
+    color: rgb(81, 84, 240);
+    text-shadow: 2px 3px rgb(230, 211, 211);
+    font-style: italic;
+}
+
+.ejemplo1::after {
+    content: " ➥"
+    
+}   
+    
+
+.ejemplo2::before {
+    color: rgb(223, 103, 55);
+    content: "Este texto deberia ir antes, esta inscrito desde CSS."
+}   
+
+
+.ejemplo3::first-letter {
+    color: red;
+    font-size: 130%;
+}
+
+.ejemplo4::first-line {
+    color: rgb(238, 39, 178);
+    text-shadow: 3px 2px 5px  rgb(95, 95, 100);
+    text-transform: uppercase;
+}
+
+.ejemplo5::grammar-error {
+    text-decoration: underline red;
+    color: red;
+}
+
+
+.ejemplo6::-moz-selection { color: white;  background: black; }
+.ejemplo6::selection      { color: white;  background: black; }
+
+input[type=color]::-moz-color-swatch {
+    border-radius: 25px;
+    border-style: none;
+}
+
+.ejemplo9::-moz-progress-bar {
+    background-color: red;
+}
+  
+  /* Forzar barras indeterminadas para tener ancho cero */
+.ejemplo9:indeterminate::-moz-progress-bar {
+    width: 0;
+}
+
+input[type=range]::-moz-range-progress {
+    background-color: green;
+    height: 1em;
+}
+
+.ejemplo11[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+
+meter::-webkit-meter-even-less-good-value {
+    background: linear-gradient(to bottom, #f77, #d44 45%, #d44 55%, #f77);
+    height: 100%;
+    box-sizing: border-box;
+}
