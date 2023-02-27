@@ -33,16 +33,16 @@ body {
     align-items: start;
     text-align: start;
 } 
-
 .color1 {
-    background-color: rgb(234, 226, 171);
+    background-color: rgb(187, 221, 178);
 }
+
 .color2 {
     background-color: rgb(206, 204, 228);
 }
 
 .color3 {
-    background-color: rgb(187, 221, 178);
+    background-color: rgb(234, 226, 171);
 }
 
 .color4 {

@@ -37,14 +37,14 @@ body {
 } 
 
 .color1 {
-    background-color: rgb(206, 204, 228);
-}
-
-.color2 {
     background-color: rgb(234, 226, 171);
 }
-.color3 {
+.color2 {
     background-color: rgb(176, 216, 210); 
+}
+
+.color3 {
+    background-color: rgb(206, 204, 228);
 }
 
 .color4 {
