@@ -10,6 +10,8 @@ body {
     font-family: hola;
     src: url(../fonts/HappyMonkey-Regular.ttf);
 }
+
+
 .nav-link {
     color: rgb(71, 71, 246);
 }

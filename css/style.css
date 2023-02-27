@@ -11,6 +11,8 @@ body {
     font-family: hola;
     src: url(../fonts/HappyMonkey-Regular.ttf);
 }
+
+
 .nav-link {
     color: rgb(71, 71, 246);
 }
@@ -21,43 +23,46 @@ body {
 }
 
 .fondo {
-    background-color: rgb(232, 160, 92);
+    background-image:url(../images/chill-vibe.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 .tittlep{
     height: 10vh;
     font-family: hola;
     color: antiquewhite;
-    background-color: transparent;
+    background-color: rgba(11, 11, 11, 0.5);
     display: flexbox;
     justify-content: center;
     align-items: center;
     text-align: center;
-    text-shadow: 2px 4px 3px black;
+    text-shadow: 2px 4px 3px rgb(87, 86, 74);
     margin-top: 50px;
     border: 2px black;
 }
 
 .tittle {
-    font-family: hola;
-    height: 20vh;
-    background-color:  navajowhite;
+    height: 10vh;
     display: flexbox;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: rgb(52, 51, 50);
-    margin-top: 20px;
+    color: rgb(232, 230, 227);
+    text-shadow: 2px 4px 3px rgb(76, 114, 237);
+    background-color: rgba(25, 25, 26, 0.5);
 }
 
 .content {
-    background-color: rgb(171, 171, 226);
+
+    background-color: rgba(25, 25, 26, 0.5);
     display: flexbox;
     justify-content: start;
     align-items: start;
     text-align: start;
-    height: 20vh;
-    color: rgb(41, 41, 40);
-    font-size: 25px;
+    height: 25vh;
+    color: rgb(237, 237, 229);
+    font-size: 22px;
 
 } 
 
